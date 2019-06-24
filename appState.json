@@ -1,0 +1,113 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "cb10db65-81de-4427-abb4-4e72c8d91589": {
+        "id": "cb10db65-81de-4427-abb4-4e72c8d91589",
+        "parent": null,
+        "name": "change_project",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "869a65e4-0b9e-4d93-89a0-f284e1143f90"
+        ],
+        "isRemovable": false,
+        "filePath": "change_project"
+      },
+      "869a65e4-0b9e-4d93-89a0-f284e1143f90": {
+        "id": "869a65e4-0b9e-4d93-89a0-f284e1143f90",
+        "parent": "cb10db65-81de-4427-abb4-4e72c8d91589",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "change_project/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1TestAPIhirutestget",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "cb10db65-81de-4427-abb4-4e72c8d91589",
+    "openFiles": [
+      "869a65e4-0b9e-4d93-89a0-f284e1143f90"
+    ],
+    "currentFileId": "869a65e4-0b9e-4d93-89a0-f284e1143f90",
+    "resources": {
+      "apigusEast1TestAPIhirutestget": {
+        "name": "apigusEast1TestAPIhirutestget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/hiru": "3nc52b",
+            "/MyLambda": "98nqbj",
+            "/": "h2lelj6j7k",
+            "/test123": "kw67fb",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 0,
+          "resourceName": "hiru/test",
+          "resourcePath": "/hiru/test",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "Test",
+          "stageDeploymentId": "qwdwgj",
+          "mode": 1
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "change_project",
+    "projectDescription": "test",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1561364412676
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "change_project",
+      "url": "https://github.com/HirudineeADRT/change_project"
+    }
+  }
+}
